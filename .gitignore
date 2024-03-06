@@ -18,8 +18,6 @@ simulation/
 # Programming files
 *.sof
 *.pof
-*.qpf
-*.qsf
 *.cdf
 
 # Simulation files
