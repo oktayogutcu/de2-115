@@ -1,0 +1,151 @@
+20:52:32 **** Incremental Build of configuration Nios II for project nios2_app_bsp ****
+make all 
+[BSP build complete]
+20:53:41 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+[nios2_app build complete]
+20:56:44 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios2_app_bsp//HAL/inc -I../nios2_app_bsp/ -I../nios2_app_bsp//drivers/inc -I./ -IFreeRTOS/include -IFreeRTOS/portable/GCC/NiosII  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'task1':
+hello_world.c:33:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("TASK 1: LIGTHENED LED IS LED%u \n", led_counter);
+          ^
+hello_world.c:33:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+hello_world.c: In function 'task2':
+hello_world.c:43:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("TASK 2: SWITCH VALUE IS %u \n", switch_val);
+          ^
+hello_world.c:43:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+Info: Linking nios2_app.elf
+nios2-elf-g++  -T'../nios2_app_bsp//linker.x' -msys-crt0='../nios2_app_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios2_app_bsp/   -Wl,-Map=nios2_app.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2_app.elf obj/default/FreeRTOS/croutine.o obj/default/FreeRTOS/event_groups.o obj/default/FreeRTOS/list.o obj/default/FreeRTOS/portable/GCC/NiosII/port.o obj/default/FreeRTOS/portable/MemMang/heap_1.o obj/default/FreeRTOS/queue.o obj/default/FreeRTOS/stream_buffer.o obj/default/FreeRTOS/tasks.o obj/default/FreeRTOS/timers.o obj/default/hello_world.o obj/default/FreeRTOS/portable/GCC/NiosII/port_asm.o -lm -msys-lib=m
+nios2-elf-insert nios2_app.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev debug --stdin_dev debug --stdout_dev debug --sopc_system_name nios2_freertos --quartus_project_dir "C:/Users/oktay/Desktop/repo/de2115/projects/hw/nios2_freertos_peripherals" --jdi ../..//output_files/nios2_freertos.jdi --sopcinfo C:/Users/oktay/Desktop/repo/de2115/projects/hw/nios2_freertos_peripherals/software/nios2_app_bsp/../../nios2_freertos.sopcinfo
+Info: (nios2_app.elf) 8289 KBytes program size (code + initialized data).
+Info:                 122775 KBytes free for stack + heap.
+Info: Creating nios2_app.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios2_app.elf >nios2_app.objdump
+[nios2_app build complete]
+20:56:47 **** Incremental Build of configuration Nios II for project nios2_app_bsp ****
+make all 
+[BSP build complete]
+20:56:51 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+[nios2_app build complete]
+20:57:29 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios2_app_bsp//HAL/inc -I../nios2_app_bsp/ -I../nios2_app_bsp//drivers/inc -I./ -IFreeRTOS/include -IFreeRTOS/portable/GCC/NiosII  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'task1':
+hello_world.c:33:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("TASK 1: LIGTHENED LED IS LED%u \n", led_counter);
+          ^
+hello_world.c:33:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+hello_world.c: In function 'task2':
+hello_world.c:43:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("TASK 2: SWITCH VALUE IS %u \n", switch_val);
+          ^
+hello_world.c:43:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+Info: Linking nios2_app.elf
+nios2-elf-g++  -T'../nios2_app_bsp//linker.x' -msys-crt0='../nios2_app_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios2_app_bsp/   -Wl,-Map=nios2_app.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2_app.elf obj/default/FreeRTOS/croutine.o obj/default/FreeRTOS/event_groups.o obj/default/FreeRTOS/list.o obj/default/FreeRTOS/portable/GCC/NiosII/port.o obj/default/FreeRTOS/portable/MemMang/heap_1.o obj/default/FreeRTOS/queue.o obj/default/FreeRTOS/stream_buffer.o obj/default/FreeRTOS/tasks.o obj/default/FreeRTOS/timers.o obj/default/hello_world.o obj/default/FreeRTOS/portable/GCC/NiosII/port_asm.o -lm -msys-lib=m
+nios2-elf-insert nios2_app.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev debug --stdin_dev debug --stdout_dev debug --sopc_system_name nios2_freertos --quartus_project_dir "C:/Users/oktay/Desktop/repo/de2115/projects/hw/nios2_freertos_peripherals" --jdi ../..//output_files/nios2_freertos.jdi --sopcinfo C:/Users/oktay/Desktop/repo/de2115/projects/hw/nios2_freertos_peripherals/software/nios2_app_bsp/../../nios2_freertos.sopcinfo
+Info: (nios2_app.elf) 8289 KBytes program size (code + initialized data).
+Info:                 122775 KBytes free for stack + heap.
+Info: Creating nios2_app.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios2_app.elf >nios2_app.objdump
+[nios2_app build complete]
+20:57:32 **** Incremental Build of configuration Nios II for project nios2_app_bsp ****
+make all 
+[BSP build complete]
+20:57:39 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+[nios2_app build complete]
+21:00:11 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios2_app_bsp//HAL/inc -I../nios2_app_bsp/ -I../nios2_app_bsp//drivers/inc -I./ -IFreeRTOS/include -IFreeRTOS/portable/GCC/NiosII  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'task1':
+hello_world.c:33:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("TASK 1: LIGTHENED LED IS LED%u \n", led_counter);
+          ^
+hello_world.c:33:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+hello_world.c: In function 'task2':
+hello_world.c:43:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("TASK 2: SWITCH VALUE IS %u \n", switch_val);
+          ^
+hello_world.c:43:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+Info: Linking nios2_app.elf
+nios2-elf-g++  -T'../nios2_app_bsp//linker.x' -msys-crt0='../nios2_app_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios2_app_bsp/   -Wl,-Map=nios2_app.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2_app.elf obj/default/FreeRTOS/croutine.o obj/default/FreeRTOS/event_groups.o obj/default/FreeRTOS/list.o obj/default/FreeRTOS/portable/GCC/NiosII/port.o obj/default/FreeRTOS/portable/MemMang/heap_1.o obj/default/FreeRTOS/queue.o obj/default/FreeRTOS/stream_buffer.o obj/default/FreeRTOS/tasks.o obj/default/FreeRTOS/timers.o obj/default/hello_world.o obj/default/FreeRTOS/portable/GCC/NiosII/port_asm.o -lm -msys-lib=m
+nios2-elf-insert nios2_app.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev debug --stdin_dev debug --stdout_dev debug --sopc_system_name nios2_freertos --quartus_project_dir "C:/Users/oktay/Desktop/repo/de2115/projects/hw/nios2_freertos_peripherals" --jdi ../..//output_files/nios2_freertos.jdi --sopcinfo C:/Users/oktay/Desktop/repo/de2115/projects/hw/nios2_freertos_peripherals/software/nios2_app_bsp/../../nios2_freertos.sopcinfo
+Info: (nios2_app.elf) 8289 KBytes program size (code + initialized data).
+Info:                 122775 KBytes free for stack + heap.
+Info: Creating nios2_app.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios2_app.elf >nios2_app.objdump
+[nios2_app build complete]
+21:00:14 **** Incremental Build of configuration Nios II for project nios2_app_bsp ****
+make all 
+[BSP build complete]
+21:00:27 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+[nios2_app build complete]
+21:02:02 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+Info: Compiling hello_world.c to obj/default/hello_world.o
+nios2-elf-gcc -xc -MP -MMD -c -I../nios2_app_bsp//HAL/inc -I../nios2_app_bsp/ -I../nios2_app_bsp//drivers/inc -I./ -IFreeRTOS/include -IFreeRTOS/portable/GCC/NiosII  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/hello_world.o hello_world.c
+hello_world.c: In function 'task1':
+hello_world.c:33:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("TASK 1: LIGTHENED LED IS LED%u \n", led_counter);
+          ^
+hello_world.c:33:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+hello_world.c: In function 'task2':
+hello_world.c:43:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+   printf("TASK 2: SWITCH VALUE IS %u \n", switch_val);
+          ^
+hello_world.c:43:10: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'uint32_t {aka long unsigned int}' [-Wformat=]
+Info: Linking nios2_app.elf
+nios2-elf-g++  -T'../nios2_app_bsp//linker.x' -msys-crt0='../nios2_app_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../nios2_app_bsp/   -Wl,-Map=nios2_app.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o nios2_app.elf obj/default/FreeRTOS/croutine.o obj/default/FreeRTOS/event_groups.o obj/default/FreeRTOS/list.o obj/default/FreeRTOS/portable/GCC/NiosII/port.o obj/default/FreeRTOS/portable/MemMang/heap_1.o obj/default/FreeRTOS/queue.o obj/default/FreeRTOS/stream_buffer.o obj/default/FreeRTOS/tasks.o obj/default/FreeRTOS/timers.o obj/default/hello_world.o obj/default/FreeRTOS/portable/GCC/NiosII/port_asm.o -lm -msys-lib=m
+nios2-elf-insert nios2_app.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --stderr_dev debug --stdin_dev debug --stdout_dev debug --sopc_system_name nios2_freertos --quartus_project_dir "C:/Users/oktay/Desktop/repo/de2115/projects/hw/nios2_freertos_peripherals" --jdi ../..//output_files/nios2_freertos.jdi --sopcinfo C:/Users/oktay/Desktop/repo/de2115/projects/hw/nios2_freertos_peripherals/software/nios2_app_bsp/../../nios2_freertos.sopcinfo
+Info: (nios2_app.elf) 8289 KBytes program size (code + initialized data).
+Info:                 122775 KBytes free for stack + heap.
+Info: Creating nios2_app.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source nios2_app.elf >nios2_app.objdump
+[nios2_app build complete]
+21:02:04 **** Incremental Build of configuration Nios II for project nios2_app_bsp ****
+make all 
+[BSP build complete]
+21:02:09 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+[nios2_app build complete]
+21:29:38 **** Incremental Build of configuration Nios II for project nios2_app ****
+make all 
+Info: Building ../nios2_app_bsp/
+C:/intelFPGA_lite/18.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../nios2_app_bsp/
+[BSP build complete]
+[nios2_app build complete]

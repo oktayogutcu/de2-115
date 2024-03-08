@@ -1,0 +1,229 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+# Date created = 20:26:14  March 05, 2024
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		nios2_freertos_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY nios2_freertos
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "20:26:14  MARCH 05, 2024"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name QIP_FILE nios2_freertos/synthesis/nios2_freertos.qip
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_clk_clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_addr
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_ba[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_ba[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_ba
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_cas_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_cke
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_cs_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[31]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[30]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[29]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[28]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[27]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[26]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[25]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[24]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[23]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[22]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_ras_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_we_n
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dqm[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dqm[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dqm[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dqm[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dqm
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[16]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[17]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[18]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[19]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[20]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq[21]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to sdram_wire_dq
+set_location_assignment PIN_Y2 -to clk_clk
+set_location_assignment PIN_AE5 -to sdram_clk_clk
+set_location_assignment PIN_R6 -to sdram_wire_addr[0]
+set_location_assignment PIN_U8 -to sdram_wire_addr[2]
+set_location_assignment PIN_V8 -to sdram_wire_addr[1]
+set_location_assignment PIN_P1 -to sdram_wire_addr[3]
+set_location_assignment PIN_V5 -to sdram_wire_addr[4]
+set_location_assignment PIN_W8 -to sdram_wire_addr[5]
+set_location_assignment PIN_W7 -to sdram_wire_addr[6]
+set_location_assignment PIN_AA7 -to sdram_wire_addr[7]
+set_location_assignment PIN_Y5 -to sdram_wire_addr[8]
+set_location_assignment PIN_Y6 -to sdram_wire_addr[9]
+set_location_assignment PIN_R5 -to sdram_wire_addr[10]
+set_location_assignment PIN_AA5 -to sdram_wire_addr[11]
+set_location_assignment PIN_Y7 -to sdram_wire_addr[12]
+set_location_assignment PIN_U7 -to sdram_wire_ba[0]
+set_location_assignment PIN_R4 -to sdram_wire_ba[1]
+set_location_assignment PIN_V7 -to sdram_wire_cas_n
+set_location_assignment PIN_AA6 -to sdram_wire_cke
+set_location_assignment PIN_T4 -to sdram_wire_cs_n
+set_location_assignment PIN_W3 -to sdram_wire_dq[0]
+set_location_assignment PIN_W2 -to sdram_wire_dq[1]
+set_location_assignment PIN_V4 -to sdram_wire_dq[2]
+set_location_assignment PIN_W1 -to sdram_wire_dq[3]
+set_location_assignment PIN_V3 -to sdram_wire_dq[4]
+set_location_assignment PIN_V2 -to sdram_wire_dq[5]
+set_location_assignment PIN_V1 -to sdram_wire_dq[6]
+set_location_assignment PIN_U3 -to sdram_wire_dq[7]
+set_location_assignment PIN_Y3 -to sdram_wire_dq[8]
+set_location_assignment PIN_Y4 -to sdram_wire_dq[9]
+set_location_assignment PIN_AB1 -to sdram_wire_dq[10]
+set_location_assignment PIN_AA3 -to sdram_wire_dq[11]
+set_location_assignment PIN_AB2 -to sdram_wire_dq[12]
+set_location_assignment PIN_AC1 -to sdram_wire_dq[13]
+set_location_assignment PIN_AB3 -to sdram_wire_dq[14]
+set_location_assignment PIN_AC2 -to sdram_wire_dq[15]
+set_location_assignment PIN_M8 -to sdram_wire_dq[16]
+set_location_assignment PIN_L8 -to sdram_wire_dq[17]
+set_location_assignment PIN_P2 -to sdram_wire_dq[18]
+set_location_assignment PIN_N3 -to sdram_wire_dq[19]
+set_location_assignment PIN_N4 -to sdram_wire_dq[20]
+set_location_assignment PIN_M4 -to sdram_wire_dq[21]
+set_location_assignment PIN_M7 -to sdram_wire_dq[22]
+set_location_assignment PIN_L7 -to sdram_wire_dq[23]
+set_location_assignment PIN_U5 -to sdram_wire_dq[24]
+set_location_assignment PIN_R7 -to sdram_wire_dq[25]
+set_location_assignment PIN_R1 -to sdram_wire_dq[26]
+set_location_assignment PIN_R2 -to sdram_wire_dq[27]
+set_location_assignment PIN_R3 -to sdram_wire_dq[28]
+set_location_assignment PIN_T3 -to sdram_wire_dq[29]
+set_location_assignment PIN_U4 -to sdram_wire_dq[30]
+set_location_assignment PIN_U1 -to sdram_wire_dq[31]
+set_location_assignment PIN_U2 -to sdram_wire_dqm[0]
+set_location_assignment PIN_W4 -to sdram_wire_dqm[1]
+set_location_assignment PIN_K8 -to sdram_wire_dqm[2]
+set_location_assignment PIN_N8 -to sdram_wire_dqm[3]
+set_location_assignment PIN_U6 -to sdram_wire_ras_n
+set_location_assignment PIN_V6 -to sdram_wire_we_n
+set_instance_assignment -name IO_STANDARD "2.5 V" -to led_export[26]
+set_location_assignment PIN_G19 -to led_export[0]
+set_location_assignment PIN_F19 -to led_export[1]
+set_location_assignment PIN_E19 -to led_export[2]
+set_location_assignment PIN_F21 -to led_export[3]
+set_location_assignment PIN_F18 -to led_export[4]
+set_location_assignment PIN_E18 -to led_export[5]
+set_location_assignment PIN_J19 -to led_export[6]
+set_location_assignment PIN_H19 -to led_export[7]
+set_location_assignment PIN_J17 -to led_export[8]
+set_location_assignment PIN_G17 -to led_export[9]
+set_location_assignment PIN_J15 -to led_export[10]
+set_location_assignment PIN_H16 -to led_export[11]
+set_location_assignment PIN_J16 -to led_export[12]
+set_location_assignment PIN_H17 -to led_export[13]
+set_location_assignment PIN_F15 -to led_export[14]
+set_location_assignment PIN_G15 -to led_export[15]
+set_location_assignment PIN_G16 -to led_export[16]
+set_location_assignment PIN_H15 -to led_export[17]
+set_location_assignment PIN_E21 -to led_export[18]
+set_location_assignment PIN_E22 -to led_export[19]
+set_location_assignment PIN_E25 -to led_export[20]
+set_location_assignment PIN_E24 -to led_export[21]
+set_location_assignment PIN_H21 -to led_export[22]
+set_location_assignment PIN_G20 -to led_export[23]
+set_location_assignment PIN_G22 -to led_export[24]
+set_location_assignment PIN_G21 -to led_export[25]
+set_location_assignment PIN_F17 -to led_export[26]
+set_location_assignment PIN_M23 -to btn_export[0]
+set_location_assignment PIN_M21 -to btn_export[1]
+set_location_assignment PIN_N21 -to btn_export[2]
+set_location_assignment PIN_R24 -to btn_export[3]
+set_location_assignment PIN_AB28 -to sw_export[0]
+set_location_assignment PIN_AC28 -to sw_export[1]
+set_location_assignment PIN_AC27 -to sw_export[2]
+set_location_assignment PIN_AD27 -to sw_export[3]
+set_location_assignment PIN_AB27 -to sw_export[4]
+set_location_assignment PIN_AC26 -to sw_export[5]
+set_location_assignment PIN_AD26 -to sw_export[6]
+set_location_assignment PIN_AB26 -to sw_export[7]
+set_location_assignment PIN_AC25 -to sw_export[8]
+set_location_assignment PIN_AB25 -to sw_export[9]
+set_location_assignment PIN_AC24 -to sw_export[10]
+set_location_assignment PIN_AB24 -to sw_export[11]
+set_location_assignment PIN_AB23 -to sw_export[12]
+set_location_assignment PIN_AA24 -to sw_export[13]
+set_location_assignment PIN_AA23 -to sw_export[14]
+set_location_assignment PIN_AA22 -to sw_export[15]
+set_location_assignment PIN_Y24 -to sw_export[16]
+set_location_assignment PIN_Y23 -to sw_export[17]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
